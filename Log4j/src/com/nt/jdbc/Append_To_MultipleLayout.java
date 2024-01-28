@@ -11,13 +11,13 @@ import org.apache.log4j.PropertyConfigurator;
 
 import oracle.net.aso.l;
 
-public class HtmLayout_To_FileAppender {
+public class Append_To_MultipleLayout {
 	//enabling the Logging on the current class
-	private static Logger logger = Logger.getLogger(HtmLayout_To_FileAppender.class);
+	private static Logger logger = Logger.getLogger(Append_To_MultipleLayout.class);
 	
 	static {
 		try {
-			PropertyConfigurator.configure("src/com/nt/commons/log4j.properties");
+			PropertyConfigurator.configure("src/com/nt/commons/log4j_mul_Appender.properties");
 			logger.info("Log4j setup is ready");
 		}
 		catch(Exception e) {
@@ -48,7 +48,7 @@ public class HtmLayout_To_FileAppender {
 				while(rs.next()) {
 					System.out.println(rs.getInt(1) + "  " + rs.getString(2) + "  " + rs.getInt(3));
 				}
-				logger.warn("ResultSet obj is processed");
+				logger.debug("ResultSet obj is processed");
 			}
 		}
 		catch(SQLException se) {
