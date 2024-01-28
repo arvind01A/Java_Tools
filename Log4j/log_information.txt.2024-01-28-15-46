@@ -1,0 +1,12 @@
+2024-01-28 15:46:16 INFO _PatternLayout2   <clinit> main       0 21 Log4j setup is ready 
+2024-01-28 15:46:16 DEBUG _PatternLayout2       main main       13 30 Start of main(-) method 
+2024-01-28 15:46:16 DEBUG _PatternLayout2       main main       651 36 JDBC driver class is loaded 
+2024-01-28 15:46:18 DEBUG _PatternLayout2       main main       1901 38 Connection establish with DB s/w 
+2024-01-28 15:46:18 DEBUG _PatternLayout2       main main       2099 41 JDBC statement object is created 
+2024-01-28 15:46:18 DEBUG _PatternLayout2       main main       2207 45 SQL query is send to DB s/w for execution and RS obj is generated 
+2024-01-28 15:46:18 DEBUG _PatternLayout2       main main       2209 51 ResultSet obj is processed 
+2024-01-28 15:46:18 DEBUG _PatternLayout2       main main       2210 67 Closing JDBC object 
+2024-01-28 15:46:18 DEBUG _PatternLayout2       main main       2211 71 ResultSet object is closed 
+2024-01-28 15:46:18 DEBUG _PatternLayout2       main main       2212 80 Statement object is closed 
+2024-01-28 15:46:18 DEBUG _PatternLayout2       main main       2216 89 Connection object is closed 
+2024-01-28 15:46:18 DEBUG _PatternLayout2       main main       2217 96 end of main(-) method 
