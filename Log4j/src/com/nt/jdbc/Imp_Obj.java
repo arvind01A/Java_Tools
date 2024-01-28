@@ -1,5 +1,10 @@
-package com.jdbc;
-
+package com.nt.jdbc;
+/*
+ * 		Important object Log4j programming
+ * 			a) Logger obj
+ * 			b) Appender obj
+ * 			c) Layout obj
+ */
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -11,10 +16,10 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.SimpleLayout;
 
-public class SelectTest {
+public class Imp_Obj {
 	
 	//enabling the Logging on the current class
-	private static Logger logger = Logger.getLogger(SelectTest.class);
+	private static Logger logger = Logger.getLogger(Imp_Obj.class);
 	
 	static {
 			try {
@@ -61,13 +66,13 @@ public class SelectTest {
 					if(rs != null) {
 							while(rs.next()) {
 									System.out.println(rs.getInt(1) + "  " + rs.getString(2) + "  " + rs.getString(3) + "  " + rs.getInt(4) + "  " + rs.getDate(5) + "  " + rs.getInt(6) + "  " + rs.getInt(7) + "  " + rs.getInt(8));
-									logger.warn("com.jdbc.SelectTest:: ResultSet obj is processed");
 							}
+							logger.warn("com.jdbc.SelectTest:: ResultSet obj is processed");
 					}
 			}
 			catch(ClassNotFoundException cnf) {
 				cnf.printStackTrace();
-				logger.error("Problem in Loading jdc driver clas");
+				logger.error("Problem in Loading jdbc driver class");
 			}
 			catch(SQLException se) {
 				se.printStackTrace();
